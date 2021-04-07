@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+  challenge-database:
+    image: postgres:13.0
+    container_name: challenge-database
+    ports:
+      - 5414:5432
+    environment:
+      POSTGRES_USER: challenge_database_test
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: challenge
